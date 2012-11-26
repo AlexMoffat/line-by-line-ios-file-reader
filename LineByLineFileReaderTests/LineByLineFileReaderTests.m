@@ -16,7 +16,7 @@
     
     __block BOOL gotError = NO;
     __block int linesRead = 0;
-    __block NSMutableArray *linesFromReader = [NSMutableArray arrayWithCapacity:8];
+    __block NSMutableArray *linesFromReader = [NSMutableArray arrayWithCapacity:lines];
     [reader processFile:path withEncoding:NSUTF8StringEncoding usingBlock:^(NSString *line, NSError *error)  {
         if (error) {
             gotError = YES;
