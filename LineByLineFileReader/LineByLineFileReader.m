@@ -131,7 +131,7 @@ uint8_t buf[TRY_TO_READ];
 // error. Either line or error will be non nil.
 - (void)processFile:(NSString *)path withEncoding:(NSStringEncoding)fileEncoding usingBlock:(void (^)(NSString *line, NSError *error))block
 {
-    self.encoding = encoding;
+    self.encoding = fileEncoding;
     self.lineProcessor = block;
     [self startProcessing:path];
 }
