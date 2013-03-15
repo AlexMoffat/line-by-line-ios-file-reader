@@ -20,7 +20,7 @@
 
 @implementation LineByLineFileReader
 
-@synthesize encoding = encoding;
+@synthesize encoding = _encoding;
 @synthesize stringBuffer = _stringBuffer;
 @synthesize lineProcessor = _lineProcessor;
 
